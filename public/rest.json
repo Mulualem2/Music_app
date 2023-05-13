@@ -1,0 +1,32 @@
+{
+  "musics": [
+    {
+      "id": "GgwNzkpq",
+      "name": "Happy",
+      "artist": " Pharrell Williams",
+      "genre": "Country"
+    },
+    {
+      "id": "Zyq5fxJt",
+      "name": "Hello",
+      "artist": "Adele",
+      "genre": "Song"
+    },
+    {
+      "id": "ky82opFh",
+      "name": "Hagere",
+      "artist": "Haile Root",
+      "genre": "Ragge"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
