@@ -24,7 +24,7 @@ export default function MyTable() {
                         <TableCell>Music Name</TableCell>
                         <TableCell align="right">Artist</TableCell>
                         <TableCell align="right">Genre</TableCell>
-                        <TableCell align="right">Edit</TableCell>
+                        <TableCell align="right">Update</TableCell>
                         <TableCell align="right">Delete</TableCell>
                     </TableRow>
                 </TableHead>
@@ -40,7 +40,7 @@ export default function MyTable() {
                             <TableCell align="right">{row.artist}</TableCell>
                             <TableCell align="right">{row.genre}</TableCell>
                             <TableCell align="right">
-                                <Button onClick={() => dispatch(setMusicSlice(row))} fullWidth variant="contained">Edit</Button>
+                                <Button onClick={() => dispatch(setMusicSlice(row))} fullWidth variant="contained">Update</Button>
                             </TableCell>
                             <TableCell align="right">
                                 <Button onClick={() => dispatch({ type: DELETE_MUSIC_BY_ID, id: row.id })} fullWidth variant="contained">Delete</Button>

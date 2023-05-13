@@ -26,12 +26,11 @@ const MyForm = () => {
     }
     return <>
         <>
-            {/* <Input style={{ margin: '10px' }} margin="normal" value={music.id} fullWidth disabled /> */}
 
             <Input style={{ margin: '10px' }} onChange={handleChange('name')} placeholder="Enter Music Name" value={music.name} fullWidth />
             <Input style={{ margin: '10px' }} onChange={handleChange('artist')} placeholder="Enter Artist" value={music.artist} fullWidth />
             <Input style={{ margin: '10px' }} onChange={handleChange('genre')} placeholder="Enter Genre" value={music.genre} fullWidth />
-            <Button style={{ margin: '10px' }} onClick={() => handleSubmit()} fullWidth variant="contained">Submit</Button>
+            <Button style={{ margin: '10px'}} onClick={() => handleSubmit()} fullWidth variant="contained">CREATE</Button>
         </>
     </>
 }
