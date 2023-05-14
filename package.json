@@ -2,7 +2,8 @@
   "name": "music-app",
   "version": "1.0.0",
   "scripts": {
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "build": "babel src -d lib"
   },
   "main": "index.js",
   "license": "MIT",
@@ -30,5 +31,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "webpack-cli": "^5.1.1"
   }
 }
