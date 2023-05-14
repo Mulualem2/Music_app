@@ -3,7 +3,7 @@ import { Provider } from "react-redux"
 import MyForm from "./components/MyForm"
 import MyTable from "./components/MyTable"
 import store from './store'
-
+import './App.css'
 
 
 import * as React from 'react';
@@ -20,7 +20,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 
-const pages = ['Form', 'Table'];
+const pages = ['Add', 'Music List'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const App = () => {
@@ -43,7 +43,7 @@ const App = () => {
     };
 
     return (
-        <>
+        <Grid className="container">
             <AppBar position="static">
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
@@ -53,7 +53,7 @@ const App = () => {
                             component="div"
                             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
                         >
-                            Music List
+                            My Music
                         </Typography>
 
                         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -115,7 +115,7 @@ const App = () => {
                         <Box sx={{ flexGrow: 0 }}>
                             <Tooltip title="Open settings">
                                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                                    <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                                    <Avatar sx={{ width: 32, height: 32 }}>M</Avatar>
                                 </IconButton>
                             </Tooltip>
                             <Menu
@@ -147,7 +147,7 @@ const App = () => {
             <br />
             <Provider store={store}>
                 <Grid container spacing={{ xs: 2, md: 3 }}>
-                    <Grid item xs={12} md={4} lg={2}>
+                    <Grid item xs={12} md={8} lg={4} padding={'50px'}>
                         <MyForm />
                     </Grid>
                     <Grid item xs={12} md={8} lg={6} justifyContent="flex-end">
@@ -155,7 +155,7 @@ const App = () => {
                     </Grid>
                 </Grid>
             </Provider>
-        </>
+        </Grid>
     );
 };
 export default App;
