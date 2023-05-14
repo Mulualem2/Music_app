@@ -14,4 +14,4 @@ to learn the core concepts.
 ### To start the json server
 - json-server --watch public/rest.json --port 8000
 ### sample snapshot
-
+![](./src/image/music.png)
